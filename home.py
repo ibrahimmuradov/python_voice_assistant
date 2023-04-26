@@ -10,6 +10,7 @@ import os
 r = sr.Recognizer()
 mic = sr.Microphone()
 
+# listen mic
 def mic_text_doc():
     text = ''
     with mic as m:
@@ -23,16 +24,18 @@ def mic_text_doc():
             print(" -- I don't understand you -- ")
     return text
 
-def text_to_speak(veri):
-    tts = gTTS(veri, lang="en")
+# change text data to speak
+def text_to_speak(data):
+    tts = gTTS(data, lang="en")
     rand = random.randint(1, 1000000)
     file = "audio-"+str(rand)+".mp3"
     tts.save(file)
     playsound(file)
     os.remove(file)
 
-flag = True
 
+flag = True
+# search world
 while flag:
     text = mic_text_doc().lower()
     print("You: ", text)
