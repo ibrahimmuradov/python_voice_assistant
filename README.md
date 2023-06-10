@@ -9,7 +9,7 @@ The assistant will respond to the sentence you say to him. You can customize the
 
 # Installation
 
-``bash
+```bash
 git clone https://github.com/ibrahimmuradov/python_voice_assistant.git .
 pip install -r requirements.txt
 ```
