@@ -3,7 +3,7 @@
 import speech_recognition as sr
 from playsound import playsound
 from gtts import gTTS
-from worlds import worlds
+from words import words
 import random
 import os
 
@@ -39,8 +39,8 @@ while flag:
     text = mic_text_doc().lower()
     print("You: ", text)
 
-    if text in worlds.keys():
-        answer = worlds[text]
+    if text in words.keys():
+        answer = words[text]
         text_to_speak(answer)
 
         if text == "exit":
