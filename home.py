@@ -34,7 +34,7 @@ def text_to_speak(data):
     os.remove(file_name)
 
 flag = True
-# search world
+# search word
 while flag:
     text = mic_text_doc().lower()
     print("You: ", text)
