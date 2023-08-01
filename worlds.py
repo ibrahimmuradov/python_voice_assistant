@@ -1,6 +1,6 @@
 from datetime import datetime
 
-worlds = {
+words = {
     "exit": "OK, exiting program",
     "hi": "Hello Sir",
     "hello": "Hi sir",
